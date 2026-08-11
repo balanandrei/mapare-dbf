@@ -1,0 +1,9 @@
+# Config personal - fiecare utilizator are propriile foldere (vezi config.example.toml)
+config.toml
+
+# Python
+__pycache__/
+*.pyc
+
+# Rezultate generate, daca ajung sa fie scrise in folderul proiectului
+*.dbf

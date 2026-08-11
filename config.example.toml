@@ -1,0 +1,24 @@
+# Config pentru generate_dbf.py
+#
+# Copiaza acest fisier ca "config.toml" (in acelasi folder) si editeaza
+# caile de mai jos - config.toml e ignorat de git, ca fiecare sa aiba
+# propriile foldere fara sa le trimita in repo.
+#
+# Rulare:
+#   python3 generate_dbf.py            (foloseste config.toml de langa script)
+#   python3 generate_dbf.py alt.toml   (foloseste alt fisier)
+
+# Folderele cu rapoarte XML de procesat. Adauga oricate vrei.
+# Fiecare folder produce propriul set de fisiere .dbf (unul per raport XML),
+# intr-un subfolder cu numele lui, in output_folder.
+input_folders = [
+    "C:\\Users\\tata\\Documents\\RAPOARTE TREZORERIE 2026",
+]
+
+# Folderul de baza pentru output.
+output_folder = "C:\\Users\\tata\\Documents\\Rapoarte_DBF"
+
+# --- Optional (are o valoare implicita buna, il poti sterge) ---
+
+# Pattern pentru fisierele XML de procesat dintr-un folder.
+glob_pattern = "*.xml"
