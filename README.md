@@ -42,9 +42,9 @@ deschide-o cu Notepad și pune folderele tale:
 
 ```toml
 input_folders = [
-    "C:\\Users\\tata\\Documents\\RAPOARTE TREZORERIE 2026",
+    "C:\\Users\\andisoft\\Documents\\RAPOARTE TREZORERIE 2026",
 ]
-output_folder = "C:\\Users\\tata\\Documents\\Rapoarte_DBF"
+output_folder = "C:\\Users\\andisoft\\Documents\\Rapoarte_DBF"
 ```
 
 - `input_folders` — unul sau mai multe foldere cu rapoarte `.xml`. **Fiecare

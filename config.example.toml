@@ -12,11 +12,11 @@
 # Fiecare folder produce propriul set de fisiere .dbf (unul per raport XML),
 # intr-un subfolder cu numele lui, in output_folder.
 input_folders = [
-    "C:\\Users\\tata\\Documents\\RAPOARTE TREZORERIE 2026",
+    "C:\\Users\\andisoft\\Documents\\RAPOARTE TREZORERIE 2026",
 ]
 
 # Folderul de baza pentru output.
-output_folder = "C:\\Users\\tata\\Documents\\Rapoarte_DBF"
+output_folder = "C:\\Users\\andisoft\\Documents\\Rapoarte_DBF"
 
 # --- Optional (are o valoare implicita buna, il poti sterge) ---
 
