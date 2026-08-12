@@ -42,15 +42,18 @@ deschide-o cu Notepad și pune folderele tale:
 
 ```toml
 input_folders = [
-    "C:\\Users\\andisoft\\Documents\\RAPOARTE TREZORERIE 2026",
+    'C:\Users\andisoft\Documents\RAPOARTE TREZORERIE 2026',
 ]
-output_folder = "C:\\Users\\andisoft\\Documents\\Rapoarte_DBF"
+output_folder = 'C:\Users\andisoft\Documents\Rapoarte_DBF'
 ```
 
 - `input_folders` — unul sau mai multe foldere cu rapoarte `.xml`. **Fiecare
   folder produce propriul set de fișiere `.dbf`** (câte unul per raport),
   într-un subfolder cu numele lui, în `output_folder`.
-- Pe Windows folosește `\\` (dublu backslash) în căi, cum e mai sus.
+- **Folosește ghilimele simple `' '`** (nu duble `" "`) în jurul căilor, ca să
+  poți lipi calea exact cum o arată Windows/Explorer, cu un singur `\`. Cu
+  ghilimele duble ai avea nevoie de backslash dublu (`\\`), altfel primești
+  eroarea `Unescaped '\' in a string`.
 
 ---
 

@@ -11,12 +11,17 @@
 # Folderele cu rapoarte XML de procesat. Adauga oricate vrei.
 # Fiecare folder produce propriul set de fisiere .dbf (unul per raport XML),
 # intr-un subfolder cu numele lui, in output_folder.
+#
+# IMPORTANT: foloseste ghilimele SIMPLE ' ' (nu duble " ") pentru cai pe
+# Windows, ca sa poti lipi calea exact cum o arata Windows/Explorer, cu un
+# singur backslash - fara sa o modifici. Cu ghilimele duble ai avea nevoie
+# de backslash dublu (\\), altfel primesti eroare "Unescaped '\' in a string".
 input_folders = [
-    "C:\\Users\\andisoft\\Documents\\RAPOARTE TREZORERIE 2026",
+    'C:\Users\andisoft\Documents\RAPOARTE TREZORERIE 2026',
 ]
 
 # Folderul de baza pentru output.
-output_folder = "C:\\Users\\andisoft\\Documents\\Rapoarte_DBF"
+output_folder = 'C:\Users\andisoft\Documents\Rapoarte_DBF'
 
 # --- Optional (are o valoare implicita buna, il poti sterge) ---
 

@@ -86,7 +86,16 @@ def load_config(path: Path) -> Config:
         raise SystemExit(f"Nu am gasit fisierul de config: {path}")
 
     with path.open("rb") as fh:
-        data = tomllib.load(fh)
+        try:
+            data = tomllib.load(fh)
+        except tomllib.TOMLDecodeError as exc:
+            raise SystemExit(
+                f"Config invalid ({path}): {exc}\n"
+                "Cel mai frecvent motiv: o cale de Windows intre ghilimele duble (\" \") cu\n"
+                "backslash simplu, ex. \"C:\\Users\\...\". Solutie: foloseste ghilimele SIMPLE\n"
+                "(' '), ex. 'C:\\Users\\...' - acolo poti lipi calea exact cum o arata Windows,\n"
+                "fara sa o modifici. Vezi exemplul din config.example.toml."
+            ) from None
 
     raw_inputs = data.get("input_folders")
     if not raw_inputs or not isinstance(raw_inputs, list):
